@@ -37,4 +37,5 @@
 
 - GCP provides $300 free credit for the 90 days
 - 20 service and free to use out of 92
-- Make sure to delete the resource once practice is done.
+- console.cloud.google.com -> GCP cloud console -> Similar to Azure Portal
+- Make sure to disable the console account once trial period has expired or delete the details from console that were provided during setup personal account.

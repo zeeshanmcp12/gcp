@@ -39,3 +39,8 @@
 - 20 service and free to use out of 92
 - console.cloud.google.com -> GCP cloud console -> Similar to Azure Portal
 - Make sure to disable the console account once trial period has expired or delete the details from console that were provided during setup personal account.
+
+### GCP Dashboard
+
+- Project number and Project ID is unique
+- Project is similar to Resource Group in Microsoft Azure.

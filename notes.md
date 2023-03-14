@@ -1,6 +1,6 @@
 # Google Cloud Platform
 
-## Region & Zones
+## Region & Zones - Section 1
 
 ### Region
 
@@ -16,3 +16,25 @@
     - Carbon footprint
     - Price
     - Latency
+
+## Hybrid and Multi-Cloud Environment
+
+### Hybrid Cloud
+
+- A setup (of cloud) with the combination of private cloud (or on-prem data center) while leveraging public cloud like GCP.
+
+### Multi-Cloud
+
+- A setup of Multi-cloud in which we do work with Azure, AWS, and GCP. For example hosting 1 service in Azure and other services on GCP.
+
+## Setup GCP account and Resources - Section 2
+
+### Use Kodekloud GCP environment
+
+- To pass the Google Cloud Digital Leader certification, it is enough to use KodeKloud environment for GCP.
+  
+### Setup Personal GCP account
+
+- GCP provides $300 free credit for the 90 days
+- 20 service and free to use out of 92
+- Make sure to delete the resource once practice is done.

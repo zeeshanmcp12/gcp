@@ -27,7 +27,7 @@
 
 - A setup of Multi-cloud in which we do work with Azure, AWS, and GCP. For example hosting 1 service in Azure and other services on GCP.
 
-## Setup GCP account and Resources - Section 2
+## GCP account and Resources - Section 2
 
 ### Use Kodekloud GCP environment
 
@@ -44,3 +44,26 @@
 
 - Project number and Project ID is unique
 - Project is similar to Resource Group in Microsoft Azure.
+
+### GCP Resource Hierarchy
+
+- Following is the resource hierarchy in GCP
+  - Organization -> This is the root node -> We can also call this as '*company*'
+  - Folder -> Here comes some departments of Shared stuff, for example, BI Team, SRE, OPS, etc
+  - Project -> We can create one or many projects inside each above folder, for example, dev project, prod project etc
+  - Resources -> These are the resources that we create inside the project. For example, VM, DB, and Firewall etc
+- Sample Hierarchy in 'tree' format:
+- acloudtechie.com -> Organization
+  - BI Team -> Folder
+    - prj-openai-weu-dev -> Project
+      - vm-openai-linux-weu-dev -> Resource
+      - aml-openai-weu-dev -> Resource
+      - sqlsrv-openai-weu-dev -> Resource
+      - bigquery-openai-weu-dve -> Resource
+  - SRE Team -> Folder
+    - prj-iac-weu-dev -> Project
+      - jmpsrv-sre-weu-dev -> Resource
+      - firewall-sre-weu-dev -> Resource
+      - splunk-sre-weu-dev
+- Graphical representation of above structure
+![gcp-resource-hierarchy](./assets/img/gcp-resource-hierarchy.png "GCP Resource Hierarchy by GCP and Kodekloud")

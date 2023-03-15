@@ -67,3 +67,30 @@
       - splunk-sre-weu-dev
 - Graphical representation of above structure
 ![gcp-resource-hierarchy](./assets/img/gcp-resource-hierarchy.png "GCP Resource Hierarchy by GCP and Kodekloud")
+
+<blockquote class="note">
+
+**Note:** Resources can interact with each other even they are in different projects.
+
+</blockquote>
+
+<style>
+.note {
+  border: 1px solid #007bff;
+  background-color: #f0faff;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>
+
+#### Hierarchy based on application environment
+
+- Following hierarchy is based on application environment.
+![decide-resource-hierarchy-option1](./assets/img/decide-resource-hierarchy-option1.svg "Hierarchy Based on Application Environment")
+
+Source: [GCP Documentation](https://cloud.google.com/architecture/landing-zones/decide-resource-hierarchy)
+
+### Billing in GCP
+
+- Personal account holder billed by the end of month.
+- Organization billed by the end of year (or as per the agreement)

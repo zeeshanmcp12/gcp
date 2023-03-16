@@ -146,13 +146,32 @@ Source: Kodekloud
 
 - It is nothing but a Virtual machine
 - It comes with different sizes
-  - General Purpose
-  - Compute Optimized
-  - Memory Optimized
+  - Scale-out workloads (T2D)
+  - General purpose workloads (E2, N2, N2D, N1)
+  - Ulta-high memory (M2, M1)
+  - Compute-intensive workloads (C2, C2D)
   - ...etc
 - Pricing
-  - Pricing is based on per-second usage
+  - Pricing is based on per-second usage of the machine types.
 - Operating systems
   - Public Images are available
     - Windows
     - Linux -> Ubuntu, Debian, CentOS, etc
+
+#### Persistent Disk
+
+- To host our source (or application) code to run our application, we need persistent disk.
+- Persistent Disk have different types
+  - HDD
+  - SSD etc
+- We can increase the size of disk according to our needs
+- We can attach the disk to our instance and de-attach as well
+
+#### VPC Firewall Rules
+
+- To access the compute instance either via SSH or browsing the application, we need set of rules that we define in VPC firewall rules to allow or deny the traffic.
+- This VPC is the guardian for that prevent unauthorized access to our systems behind these vpc.
+- We can create following rules as an example
+  - SSH to compute instance using port 22
+  - HTTPS to web application using port 443
+  - ...etc

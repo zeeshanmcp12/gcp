@@ -94,3 +94,31 @@ Source: [GCP Documentation](https://cloud.google.com/architecture/landing-zones/
 
 - Personal account holder billed by the end of month.
 - Organization billed by the end of year (or as per the agreement)
+
+## Compute in GCP
+
+- There are variety of options (services) available that provides compute services in GCP. Following are the some of them:
+  - Compute Engine -> It comes under IaaS (Servers) - Virtual Machine in Azure
+  - Cloud Functions -> It comes under IaaS (Servers) - Azure Function - App Service
+  - Google Kubernetes Engine -> It comes under IaaS (Servers) - Azure Kubernetes Service
+  - Cloud Run -> It comes under IaaS (Servers)
+  - App Engine - App Service (App service plan)
+  - Workflow - Logic App
+  - Container Optimized OS
+
+### Understanding Compute, Persistent Disk, and Firewall
+
+- To understand the aforementioned, look at these things
+  - Application (website)
+    - Compute -> is a virtual machine that can run our application
+  - Application (website) images/content
+    - Persistent -> is a storage where we can store images and all content.
+  - Client
+    - Mobile and Browser etc -> that will use our application
+  - Communication and Networking will be secure through HTTP/S
+    - Cloud VPC Firewall -> to allow only HTTPS traffic
+  - Location (region) where the clients will access the application from
+    - Zone (in region) -> the data center which is nearest to client to minimize the latency.
+- Graphical representation
+![compute-persistent-networking](./assets/img/compute-persistent-networking.png)
+Source: Kodekloud

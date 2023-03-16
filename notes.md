@@ -122,3 +122,37 @@ Source: [GCP Documentation](https://cloud.google.com/architecture/landing-zones/
 - Graphical representation
 ![compute-persistent-networking](./assets/img/compute-persistent-networking.png)
 Source: Kodekloud
+
+### Compute demo points
+
+<blockquote class="info">
+
+**Info:** We need to enable the "Compute Engine API" for the first time we create compute instance. This is similar to *Resource Provider* in Microsoft Azure.
+
+</blockquote>
+
+<style>
+.info {
+  border: 1px solid #28a745;
+  background-color: #f0fff0;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>
+
+### Summary of compute, persistent disk, and firewall
+
+#### Compute
+
+- It is nothing but a Virtual machine
+- It comes with different sizes
+  - General Purpose
+  - Compute Optimized
+  - Memory Optimized
+  - ...etc
+- Pricing
+  - Pricing is based on per-second usage
+- Operating systems
+  - Public Images are available
+    - Windows
+    - Linux -> Ubuntu, Debian, CentOS, etc

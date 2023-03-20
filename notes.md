@@ -182,3 +182,25 @@ There are three kinds of roles in Cloud IAM:
   - Roles existing in GCP before Cloud IAM was introduced and that continue to work: Owner, Editor, and Viewer
 - Predefined roles - Roles managed by GCP granting granular access control to specific services.
 - Custom roles - Roles created to tailor permissions to the needs of an organization when predefined roles cannot meet them.
+
+### Scaling compute with instance group and load balancer
+
+#### Instance Group
+
+- Manages as single entity
+- Contains two types of instances
+  - Managed instances
+    - Two or more identical Virtual machines
+    - auto scaling
+    - automatic updates
+    - High availability
+    - Scalability
+    - Self-healing
+  - Un-managed instances
+    - Un-identical virtual machines OR
+    - Multiple different virtual machine that are spin up in same instance group
+    - We have to manage the load balancing our-selves
+- Provides scalability
+- Provides High availability
+- Has feature of 'Self-healing' that makes sure the system is always available in case of any instance is down in an instance group
+- Works similar to Virtual machine scale set in Azure

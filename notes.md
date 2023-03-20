@@ -217,3 +217,8 @@ There are three kinds of roles in Cloud IAM:
   - It works based on an auto scaling policy. For example in past when the CPU was greater than 60%, it added an instance so this time it will predict the same and perform auto-scaling.
 - Instances in instance group provides resiliency which means:
   - If we have only one instance and we delete that instance then it will delete the instance and create a new one because we setup an instance group with minimum one instances, hence it provides resiliency.
+
+### Some useful commands
+
+- We can query the quota limit by executing this command
+  - gcloud compute project-info describe --project myProject

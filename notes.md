@@ -175,3 +175,10 @@ Source: Kodekloud
   - SSH to compute instance using port 22
   - HTTPS to web application using port 443
   - ...etc
+
+There are three kinds of roles in Cloud IAM:
+
+- Primitive roles
+  - Roles existing in GCP before Cloud IAM was introduced and that continue to work: Owner, Editor, and Viewer
+- Predefined roles - Roles managed by GCP granting granular access control to specific services.
+- Custom roles - Roles created to tailor permissions to the needs of an organization when predefined roles cannot meet them.

@@ -188,6 +188,7 @@ There are three kinds of roles in Cloud IAM:
 #### Instance Group
 
 - Manages as single entity
+  - We can monitor all instances under one group as well as perform scalability
 - Contains two types of instances
   - Managed instances
     - Two or more identical Virtual machines
@@ -204,3 +205,15 @@ There are three kinds of roles in Cloud IAM:
 - Provides High availability
 - Has feature of 'Self-healing' that makes sure the system is always available in case of any instance is down in an instance group
 - Works similar to Virtual machine scale set in Azure
+
+#### Instance Template
+
+- In this instance template we only have to define the properties of virtual machine one time and then we can reuse it whenever we want with new instance group.
+  - By properties I meant by OS type, Size of VM, networking rule etc
+
+#### Demo - Instance group
+
+- Productive auto-scaling
+  - It works based on an auto scaling policy. For example in past when the CPU was greater than 60%, it added an instance so this time it will predict the same and perform auto-scaling.
+- Instances in instance group provides resiliency which means:
+  - If we have only one instance and we delete that instance then it will delete the instance and create a new one because we setup an instance group with minimum one instances, hence it provides resiliency.

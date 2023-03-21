@@ -218,7 +218,48 @@ There are three kinds of roles in Cloud IAM:
 - Instances in instance group provides resiliency which means:
   - If we have only one instance and we delete that instance then it will delete the instance and create a new one because we setup an instance group with minimum one instances, hence it provides resiliency.
 
+#### Demo - Load Balancer
+
+- Load balancer is part of "Network Service". Similarly
+  - VPC Firewall Rule
+- Type of Load Balancer in GCP
+  - HTTPS Load Balancer
+    - It uses layer 7 protocols
+  - TCP Load Balancer
+    - Layer 4 load balancer
+  - UDP Load Balancer
+    - Layer 4 load balancer
+- Internet Facing or Internal
+- Global or Regional
+
+##### Some common terms used in Load balancer demo
+
+- TCP
+- UDP
+- Layer 7
+
+<blockquote class="info">
+
+**Info:** A very nice and simple explanation shown by Kodekloud is as below
+
+</blockquote>
+
+<style>
+.info {
+  border: 1px solid #28a745;
+  background-color: #f0fff0;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>
+
+![Source: Kodekloud](./assets/img/tcp-udp-layer7.png "TCP, UDP and Layer 7")
+
 ### Some useful commands
 
 - We can query the quota limit by executing this command
   - gcloud compute project-info describe --project myProject
+
+### GCP VS Azure - Services
+
+- Cloud Armor - WAF (Web Application Firewall)

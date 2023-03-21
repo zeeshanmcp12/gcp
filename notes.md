@@ -157,6 +157,8 @@ Source: Kodekloud
   - Public Images are available
     - Windows
     - Linux -> Ubuntu, Debian, CentOS, etc
+- Regardless of the region where we created our VM, default time on all GCP VM is UTC.
+- Solo tenant node is a physical Compute Engine Server dedicated to hosting only our project's VM instances.
 
 #### Persistent Disk
 
@@ -229,14 +231,22 @@ There are three kinds of roles in Cloud IAM:
     - Layer 4 load balancer
   - UDP Load Balancer
     - Layer 4 load balancer
-- Internet Facing or Internal
+- Different kinds of Load Balancer
+  - Internet-Facing that gets an IP address and available on public internet.
+  - Internal - That communicates and serves the requests coming from internal network.
 - Global or Regional
+- Health Check
+  - It is Mandatory option that we need to configure while setting up load balancer
+  - It performs the health check to backend server to see if it's up and running.
 
 ##### Some common terms used in Load balancer demo
 
-- TCP
+- TCP - Transmission Control Protocol
+  - Refers to as TCP/IP protocol - IP stands for Internet Protocol
+  - Communication standards that enables application and computing devices to exchange message over the network.
 - UDP
-- Layer 7
+- Layer 7 Load Balancer - HTTP/S Load Balancer
+- Layer 4 Load Balancer - TCP/UDP Load Balancer
 
 <blockquote class="info">
 
@@ -263,3 +273,12 @@ There are three kinds of roles in Cloud IAM:
 ### GCP VS Azure - Services
 
 - Cloud Armor - WAF (Web Application Firewall)
+
+### Use case to Hands-on GCP
+
+#### Minimum Requirements
+
+- An application should be
+  - Scalable
+  - Highly Available
+  - Performed through easy deployment

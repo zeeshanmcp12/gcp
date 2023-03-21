@@ -281,4 +281,10 @@ There are three kinds of roles in Cloud IAM:
 - An application should be
   - Scalable
   - Highly Available
-  - Performed through easy deployment
+  - Deployed through "Easy deployment"
+- Easy Deployment
+  - Startup script OR Post deployment script
+    - apt get update
+    - apt -y install apache2
+    - echo "Simple server running on $(hostname)" > /var/www/html/index.html
+- If startup script is failed, the virtual machine will not be failed.

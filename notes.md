@@ -264,6 +264,7 @@ There are three kinds of roles in Cloud IAM:
 </style>
 
 ![Source: Kodekloud](./assets/img/tcp-udp-layer7.png "TCP, UDP and Layer 7")
+Source: Kodekloud
 
 ### Some useful commands
 
@@ -330,3 +331,35 @@ There are three kinds of roles in Cloud IAM:
     - Firestore
 - Difference between SQL and NoSQL Database
 ![Source: Kodekloud](./assets/img/sql-nosql-db.png "SQL and NoSQL Database")
+Source: Kodekloud
+
+#### Which Database Should I use?
+
+<blockquote class="info">
+
+**Info:** This Diagram shows the databases based on use-cases
+
+</blockquote>
+
+<style>
+.info {
+  border: 1px solid #28a745;
+  background-color: #f0fff0;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>
+
+![Source: Kodekloud](./assets/img/which-db-should-i-use.png "Database to Use")
+Source: Kodekloud
+
+#### Demo - Database
+
+- Enable SQL Admin API
+  - It will require when connecting to db first time
+- Multi-region data replication
+  - Database replication can be done outside the region
+- Database backup is setup by default
+- Maintenance Window
+- Delete Protection
+  - We need to disable it before deleting the database

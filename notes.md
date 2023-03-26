@@ -363,3 +363,15 @@ Source: Kodekloud
 - Maintenance Window
 - Delete Protection
   - We need to disable it before deleting the database
+
+### Object Storage
+
+#### Storage types
+
+- Volumes
+- Database
+  - Cloud SQL
+  - Alloy DB
+- Un-structured data
+  - Google Cloud Storage
+

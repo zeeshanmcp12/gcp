@@ -288,3 +288,45 @@ There are three kinds of roles in Cloud IAM:
     - apt -y install apache2
     - echo "Simple server running on $(hostname)" > /var/www/html/index.html
 - If startup script is failed, the virtual machine will not be failed.
+
+### Database
+
+#### Different kinds of Databases in GCP
+
+- Cloud SQL
+  - Works with
+    - SQL Server
+    - MySQL Server
+    - PostGreSQL Server
+- Cloud Spanner
+  - Cloud-Native
+  - Provides 99.999% uptime
+  - Process more than 2 billion request per second at peak
+  - Suitable for users using Oracle and DynamoDB
+- Alloy DB for PostgreSQL
+  - Fully managed, POSTGRESQL-compatible database
+- Cloud Bigtable
+  - Fully managed NoSQL Database
+  - Casandra
+
+#### SQL and NoSQL Database
+
+- Relational Database (SQL)
+  - Data stored in tabular format
+  - Some systems that are built and used SQL kind of databases:
+    - Ticketing System
+    - Ordering System
+  - SQL Databases that are used in GCP
+    - Cloud SQL
+    - Cloud Spanner
+- Non-Relational Database (NoSQL)
+  - Data stored in document format.
+    - Data stored key-value pair format
+  - It does not contain any table for that
+  - If we want to pick the restaurant where we ate the food from, we can pick the list based on user id (as unique key) and values from NoSQL db.
+  - NoSQL Databases that are used in GCP
+    - Cloud Bigtable
+    - Memorystore
+    - Firestore
+- Difference between SQL and NoSQL Database
+![Source: Kodekloud](./assets/img/sql-nosql-db.png "SQL and NoSQL Database")

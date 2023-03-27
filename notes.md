@@ -375,3 +375,62 @@ Source: Kodekloud
 - Un-structured data
   - Google Cloud Storage
 
+#### Google Cloud storage (Object storage in GCP)
+
+- Cloud storage sometimes refers to as Bucket.
+- Pay what you use
+  - We only pay for what we use in Object Storage in GCP. For example if we have 20 gigabyte of data, we only have to pay for that.
+- Turbo replication
+  - We can enable the turbo replication which replicates 100% of data between regions in 15 or less mins.
+- Durability of data is 99.999999%
+- Retrieval of data is very often
+
+#### Use Case - GCP Cloud storage
+
+- Rich media storage and delivery
+  - Where user have to upload image and videos etc
+- Big data analytics
+- Internet of things
+- Backup and archiving
+
+#### Demo - GCP storage bucket
+
+- Bucket should be globally unique
+- Storage class
+- Expose bucket to public internet
+  - This should not be enable
+  - By default this options is "checked"
+
+#### Storage class - GCP Storage
+
+- Why we use it?
+  - The data in bucket is 1 year old
+  - We are still paying for the data even it is not being used
+  - We cannot simply delete the data as it is required for auditing purpose
+  - Here comes storage class
+- What is Storage class?
+  - Storage class is a way in which we can chose a right kind of configuration for our bucket
+  - It helps us to optimize the cost for the data
+- Types of Storage class
+  - Standard storage
+  - Nearline storage
+    - 30 day minimum storage duration
+  - Coldline storage
+    - 90 day minimum storage duration
+  - Archive storage
+    - 365 day minimum storage duration
+
+<blockquote class="note">
+
+**Note:** There is no cost once we archive the data in "Archive storage class" bucket. But reviewing the data again from archive is very costly. So make sure to select the class based on data usage.
+
+</blockquote>
+
+<style>
+.note {
+  border: 1px solid #007bff;
+  background-color: #f0faff;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>

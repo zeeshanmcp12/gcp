@@ -459,3 +459,19 @@ Source: Kodekloud
   margin: 1em 0;
 }
 </style>
+
+### Building APIs in GCP
+
+- Microservice architecture is nothing but, they are independent resources built by different teams communicating with each other.
+- API - Application User Interface
+- Which service in GCP we do have available to build APIs?
+- Can we scale APIs to let's say 100 easily?
+
+#### Apigee in GCP
+
+- Apigee (API management) is a tool in GCP that can help us to build APIs.
+- Apigee Management System
+  - All our client (mobile app, pos system, web etc) will be using Apigee Edge which will connect to backend systems. For example Database, etc
+- AI-Powerd API monitoring
+- The tool is developer-friendly
+- Apigee is hybrid solution. We only have to select where to host our APIs.

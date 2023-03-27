@@ -384,6 +384,26 @@ Source: Kodekloud
   - We can enable the turbo replication which replicates 100% of data between regions in 15 or less mins.
 - Durability of data is 99.999999%
 - Retrieval of data is very often
+- Protection tools
+  - Your data is always protected with Cloud Storage but you can also choose from these additional data protection options to prevent data loss.
+  - None
+  - Object versioning
+  - Retention policy
+
+<blockquote class="note">
+
+**Note:** Note that object versioning and retention policies cannot be used together.
+
+</blockquote>
+
+<style>
+.note {
+  border: 1px solid #007bff;
+  background-color: #f0faff;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>
 
 #### Use Case - GCP Cloud storage
 
@@ -411,11 +431,16 @@ Source: Kodekloud
 - What is Storage class?
   - Storage class is a way in which we can chose a right kind of configuration for our bucket
   - It helps us to optimize the cost for the data
+  - Storage class has to be selected based on our workload.
 - Types of Storage class
+  - Auto-class
+    - Automatically transitions each object to hotter or colder storage based on object-level activity, to optimize for cost and latency. Recommended if usage frequency may be unpredictable. Can be changed to a default class at any time.
+  - Set a Default class
+    - We can select default class using this option
   - Standard storage
-  - Nearline storage
+  - Near-line storage
     - 30 day minimum storage duration
-  - Coldline storage
+  - Cold-line storage
     - 90 day minimum storage duration
   - Archive storage
     - 365 day minimum storage duration

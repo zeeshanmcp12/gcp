@@ -475,3 +475,17 @@ Source: Kodekloud
 - AI-Powerd API monitoring
 - The tool is developer-friendly
 - Apigee is hybrid solution. We only have to select where to host our APIs.
+
+### Big Data and AI with GCP
+
+#### 4 v's of Big Data
+
+- 1st V -> Volume of data
+- 2nd V -> Velocity of data
+  - how fast we are generating the data
+- 3rd V -> Variety of data
+  - Data is generally one of three types: structured, un-structured, semi-structured
+- 4th V -> Veracity of data
+  - The veracity of big data denotes the trustworthiness of the data. Is the data accurate and high-quality? Can we use that data right away?
+  - In simple words about Veracity
+    - The huge amount of structured or un-structured data volume that we generated quickly is useful for organization?

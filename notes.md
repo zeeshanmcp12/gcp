@@ -489,3 +489,52 @@ Source: Kodekloud
   - The veracity of big data denotes the trustworthiness of the data. Is the data accurate and high-quality? Can we use that data right away?
   - In simple words about Veracity
     - The huge amount of structured or un-structured data volume that we generated quickly is useful for organization?
+
+#### 4 Steps of handling big data in GCP
+
+- Collection of data
+  - Batch
+  - Real-time
+  - Near real-time
+- Processing the data
+  - Spark
+  - Big data tool that can process large amount of data
+- Analytics on Data
+  - Once we have done the processing od the given, we have to now analyze this data and take business decision
+- AI and Machine Learning
+- What are the GCP services that can help us achieve all above steps?
+
+#### Usecase for Big Data
+
+- We have a company that sells something to customer
+- We have a warehouse where we keep the stuff
+- Now we have an order from the customer
+- To process the order, we will pack the product and ship to customer
+- As soon as the product leaves the warehouse
+  - we can take the data using IOT (internet of things) and ingest the data in Pub/Sub topic (A streaming service in GCP that can stream real-time information)
+  - From Pub/Sub, this data can be stored in Cloud Storage (Object storage or Bucket) as an object
+  - Once we have our data stored, we can perform analysis on that data.
+    - To analysis the data we have BigQuery (warehouse) and Dataproc in which we can do analytics on data.
+  - Last is Vertex AI which is used to train, model and deploy the data.
+
+##### Core services being used for Big Data and AI
+
+- Pub/Sub               -> Ingest
+  - Use for real-time information
+  - can be used to ingest the data into Big Query, data lake (can be cloud storage bucket), or operational databases (can be Cloud sql)
+- Cloud Storage         -> Store
+  - Lower-cost storage option
+  - Can act as Data warehouse
+  - Connect further to Big Query, Dataproc to process the data.
+- Big Query / Dataproc  -> Analytics
+  - Use for data processing
+  - Dataproc is a fully managed and highly scalable service for running Apache Spark, 30+ open-source tools and frameworks.
+    - Used for data lake modernization, ETL
+    - Pay as you go model
+    - No license required
+- Vertex AI             -> Train and Deploy
+  - Use to build and run AI model
+  - Data engineers can build, train, deploy, and use the data using Vertex AI.
+  - End-to-End machine learning model deployment
+  - Options to use Tensorflow, Scikit ML libraries
+

@@ -538,3 +538,17 @@ Source: Kodekloud
   - End-to-End machine learning model deployment
   - Options to use Tensorflow, Scikit ML libraries
 
+#### Demo - PUB/SUB
+
+- Topic
+  - When the data gets ingested, it is first stored in Topic.
+  - We can consider Topic as a temporary storage
+  - OR a "Stream of information that is getting ingested".
+  - Data retention is by default set to 7 days (minimum) but we can increase the days
+  - Max days is 30 as we cannot keep the topic as permanent data.
+- Subscription
+  - From the Topic, we can read this information via Subscription.
+  - The subscription connects to a Topic and extracts the required information.
+  - From Subscription, we can further push it to Cloud storage, Cloud SQL and other services in GCP.
+- Snapshot
+  - If we want to keep the snapshot of data we can enable this option.

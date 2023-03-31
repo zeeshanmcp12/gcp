@@ -290,9 +290,9 @@ Source: Kodekloud
     - echo "Simple server running on $(hostname)" > /var/www/html/index.html
 - If startup script is failed, the virtual machine will not be failed.
 
-### Database
+## Database
 
-#### Different kinds of Databases in GCP
+### Different kinds of Databases in GCP
 
 - Cloud SQL
   - Works with
@@ -364,9 +364,9 @@ Source: Kodekloud
 - Delete Protection
   - We need to disable it before deleting the database
 
-### Object Storage
+## Object Storage
 
-#### Storage types
+### Storage types
 
 - Volumes
 - Database
@@ -460,14 +460,14 @@ Source: Kodekloud
 }
 </style>
 
-### Building APIs in GCP
+## Building APIs in GCP
 
 - Microservice architecture is nothing but, they are independent resources built by different teams communicating with each other.
 - API - Application User Interface
 - Which service in GCP we do have available to build APIs?
 - Can we scale APIs to let's say 100 easily?
 
-#### Apigee in GCP
+### Apigee in GCP
 
 - Apigee (API management) is a tool in GCP that can help us to build APIs.
 - Apigee Management System
@@ -476,9 +476,9 @@ Source: Kodekloud
 - The tool is developer-friendly
 - Apigee is hybrid solution. We only have to select where to host our APIs.
 
-### Big Data and AI with GCP
+## Big Data and AI with GCP
 
-#### 4 v's of Big Data
+### 4 v's of Big Data
 
 - 1st V -> Volume of data
 - 2nd V -> Velocity of data
@@ -490,7 +490,7 @@ Source: Kodekloud
   - In simple words about Veracity
     - The huge amount of structured or un-structured data volume that we generated quickly is useful for organization?
 
-#### 4 Steps of handling big data in GCP
+### 4 Steps of handling big data in GCP
 
 - Collection of data
   - Batch
@@ -504,7 +504,7 @@ Source: Kodekloud
 - AI and Machine Learning
 - What are the GCP services that can help us achieve all above steps?
 
-#### Usecase for Big Data
+### Usecase for Big Data
 
 - We have a company that sells something to customer
 - We have a warehouse where we keep the stuff
@@ -517,7 +517,7 @@ Source: Kodekloud
     - To analysis the data we have BigQuery (warehouse) and Dataproc in which we can do analytics on data.
   - Last is Vertex AI which is used to train, model and deploy the data.
 
-##### Core services being used for Big Data and AI
+### Core services being used for Big Data and AI
 
 - Pub/Sub               -> Ingest
   - Use for real-time information
@@ -538,7 +538,7 @@ Source: Kodekloud
   - End-to-End machine learning model deployment
   - Options to use Tensorflow, Scikit ML libraries
 
-#### Demo - PUB/SUB
+### Demo - PUB/SUB
 
 - Topic
   - When the data gets ingested, it is first stored in Topic.
@@ -551,4 +551,18 @@ Source: Kodekloud
   - The subscription connects to a Topic and extracts the required information.
   - From Subscription, we can further push it to Cloud storage, Cloud SQL and other services in GCP.
 - Snapshot
-  - If we want to keep the snapshot of data we can enable this option.
+  - Once the topic is deleted, the data cannot be retrieved. If the information that is present in this topic is important, we can enable the snapshot option for this topic.
+
+### Demo - BigQuery
+
+- Big Query pricing is based on "Amount of data scanned during the query"
+- We can save and share the Query
+- When we upload the data, scheme can be auto-detected based on the data in file.
+  - Table info
+    - Provides information about the table
+  - Storage info
+    - Provides information the data, for example Number of rows, size etc
+- BI Engine
+  - BI engine saves our cost
+  - We can create the reservation for BI Engine
+- Looker is best tool to find insights and visualize of the data stored in Big Query?

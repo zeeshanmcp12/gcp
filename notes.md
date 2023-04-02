@@ -566,3 +566,57 @@ Source: Kodekloud
   - BI engine saves our cost
   - We can create the reservation for BI Engine
 - Looker is best tool to find insights and visualize of the data stored in Big Query?
+
+## Container orchestration in GCP
+
+- Virtualization
+- Docker
+
+### Google Kubernetes Engine (GKE)
+
+- Kubernetes
+  - The open-source container orchestration tool
+  - Automating
+  - Software development
+  - Scaling
+  - Management
+- It has two modes of operation in terms of deploying and managing the GKE
+  - Autopilot
+    - We spin up the cluster in Auto-polit mode and rest of the things will be managed by Kubernetes
+    - In this mode, we only focus on deployment
+    - The complete kubernetes management that is taking care of this kubernetes service done by Autopilot.
+  - Standard
+    - In this mode, we have to control the behavior of our kubernetes cluster
+- Virtual machines in GKE cluster keep billing even we do not use those virtual machines.
+
+### Cloud Run
+
+- Cloud Run is similar to Azure Container Instance
+- Cloud Run is based on serverless architecture
+- We do not have access on its file system
+- We can build and deploy scalable containerized application written in any language including Go, Python, Java, Node Js etc
+- Cloud Run pricing is based on "Pay per use"
+  - If we deploy container and it the traffic is coming to this container then we will be paying money in GCP, If not we shall not be paying money to GCP.
+
+#### How an architectural flow looks like in Cloud Run
+
+- Each Cloud run container can receive default 80 requests at the same time. If the traffic is increased, it will increase the container.
+- We can increase the concurrent request count to maximum 1000.
+
+### Demo - Cloud Run
+
+- Cloud Run would require a docker image from
+  - Artifact registry
+  - Container registry
+- Auto-scaling
+  - number of instances means "container"
+
+## gcloud CLI commands
+
+gcloud COMMAND_GROUP COMMAND
+gcloud projects list
+
+- gcloud auth login
+- gcloud projects list/create/delete
+- gcloud topic
+  - gcloud supplementary help

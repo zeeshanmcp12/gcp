@@ -611,6 +611,15 @@ Source: Kodekloud
 - Auto-scaling
   - number of instances means "container"
 
+## GCP Security, Privacy, and Cloud Compliance
+
+Following are the use-cases we need to achieve while migrating resources from On-prem to cloud:
+
+- Detect, investigate and respond to threats faster
+- Protect business-critical apps from fraud and web attacks
+- Digital (OR Data) sovereignty
+- Provide secure access to systems, data, and resources
+
 ## gcloud CLI commands
 
 gcloud COMMAND_GROUP COMMAND

@@ -527,6 +527,7 @@ Source: Kodekloud
   - Can act as Data warehouse
   - Connect further to Big Query, Dataproc to process the data.
 - Big Query / Dataproc  -> Analytics
+  - Big Query is considered as data warehouse in GCP.
   - Use for data processing
   - Dataproc is a fully managed and highly scalable service for running Apache Spark, 30+ open-source tools and frameworks.
     - Used for data lake modernization, ETL
@@ -655,6 +656,9 @@ Using following services, we can achieve security best practices
 
 Two important terms
 
+- Security of the Cloud - Cloud PRovider
+- Security in the Cloud - Customer
+
 - Security of the Cloud - These measures comes under GCP's responsibility
   - Physical security of data center
   - Global network
@@ -662,6 +666,7 @@ Two important terms
   - Make sure the licensing of products
   - Cyber security of data centers
 - Security in the Cloud - These measures comes under User's responsibility
+  - Shared responsibility between the cloud provider and the customer
   - Data security inside the cloud
   - Application configuration according to best practices
     - Prevent exposing application directly to public internet
@@ -669,6 +674,39 @@ Two important terms
   - Taking proactive measures in solving security threats
     - Alerts setup
     - Policies setup
+
+#### IaaS
+
+Following comes under Google's responsibility when using IaaS
+
+- Audit Logs
+- Network
+- Storage + encryption
+- Hardened Kernel + IPC
+- Boot
+- Hardware
+- Physical Security
+
+#### Shared Responsibility Diagram
+
+Best diagram by Google which describes the shared responsibility
+![Shared Responsibility Model](./assets/img/shared-responsibility-model.png)
+Source: **Google - CloudSkillBoost**
+
+<blockquote class="info">
+
+**Info:** Customers are always responsible for the security of their data.
+
+</blockquote>
+
+<style>
+.info {
+  border: 1px solid #28a745;
+  background-color: #f0fff0;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>
 
 ## Overview - Understanding GCP Architecture
 

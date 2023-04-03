@@ -670,6 +670,16 @@ Two important terms
     - Alerts setup
     - Policies setup
 
+## Overview - Understanding GCP Architecture - How we can connect on-prem resources to GCP cloud
+
+- Google cloud interconnect & VPN
+  - Provides secure and safe connection between on-prem and our GCP cloud
+- Virtual edge filter
+  - Provides some security and does latency improvement within the GCP for traffic coming from on-prem dc.
+
+![Connection On-Prem to GCP](./assets/img/connection-on-prem-to-gcp.png)
+Source: **KodeKloud**
+
 ## gcloud CLI commands
 
 gcloud COMMAND_GROUP COMMAND

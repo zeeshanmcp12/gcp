@@ -620,6 +620,37 @@ Following are the use-cases we need to achieve while migrating resources from On
 - Digital (OR Data) sovereignty
 - Provide secure access to systems, data, and resources
 
+### GCP services for securing our cloud setup
+
+Using following services, we can achieve security best practices
+
+- Data Replication
+  - Data replication and disaster recovery
+- Single Sign-on
+  - Integrate with the single sign-on system
+- IAM
+  - Use IAM to provide the least required access
+- Cloud Armor
+  - Enable Cloud Armor protection - This is similar to Azure Firewall (OR WAF)
+- Threat Detection
+  - Setup rules to alert on misconfiguration. For example
+  - If someone in GCP misconfigured load balancer policy settings, we will be alerted as soon as GCP detects it
+
+<blockquote class="note">
+
+**Note:** Not all the services (OR features) are enabled by default. Here comes the concept of "**Shared Responsibility model**"
+
+</blockquote>
+
+<style>
+.note {
+  border: 1px solid #007bff;
+  background-color: #f0faff;
+  padding: 1em;
+  margin: 1em 0;
+}
+</style>
+
 ## gcloud CLI commands
 
 gcloud COMMAND_GROUP COMMAND

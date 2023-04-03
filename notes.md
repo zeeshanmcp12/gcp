@@ -651,6 +651,26 @@ Using following services, we can achieve security best practices
 }
 </style>
 
+### Shared Responsibility Model
+
+Two important terms
+
+- Security of the Cloud - These measures comes under GCP's responsibility
+  - Physical security of data center
+  - Global network
+  - Apply security patches and updates to Operating system which are being provided by GCP to its customer
+  - Make sure the licensing of products
+  - Cyber security of data centers
+- Security in the Cloud - These measures comes under User's responsibility
+  - Data security inside the cloud
+  - Application configuration according to best practices
+    - Prevent exposing application directly to public internet
+    - Prevent service accounts to be created with Owner/Editor permission
+  - Taking proactive measures in solving security threats
+    - Alerts setup
+    - Policies setup
+
+
 ## gcloud CLI commands
 
 gcloud COMMAND_GROUP COMMAND

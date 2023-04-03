@@ -701,6 +701,12 @@ Source: **KodeKloud**
 ![Log Processing](./assets/img/log-processing-big-data.png)
 Source: **KodeKloud**
 
+## Exam Overview - GCP Cloud Digital Leader Certification
+
+A good and comprehensive guide described in following diagram (by KodeKloud)
+
+![Exam Overview](./assets/img/exam-overview-gcp-cdlc.png)
+Source: **KodeKloud**
 
 ## gcloud CLI commands
 

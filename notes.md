@@ -670,7 +670,9 @@ Two important terms
     - Alerts setup
     - Policies setup
 
-## Overview - Understanding GCP Architecture - How we can connect on-prem resources to GCP cloud
+## Overview - Understanding GCP Architecture
+
+### Connect on-prem to GCP cloud
 
 - Google cloud interconnect & VPN
   - Provides secure and safe connection between on-prem and our GCP cloud
@@ -679,6 +681,26 @@ Two important terms
 
 ![Connection On-Prem to GCP](./assets/img/connection-on-prem-to-gcp.png)
 Source: **KodeKloud**
+
+### Internet of Things -> Sensor stream ingest and processing
+
+![Sensor stream ingest and processing](./assets/img/sensor-stream-ingest-and-processing.png)
+Source: **KodeKloud**
+
+### Big Data -> Log Processing
+
+- Microservice (GKE or Container Engine) is up and running
+  - Collect logs from microservice - Logging
+    - Ingest the logs in BATCH OR - Ingesting
+    - STREAM on real-time in PUB/SUB - Ingesting
+      - Process the logs - Dataflow - Log Processing
+        - Analyze the logs - BigQuery - Log Analytics
+          - For example, What are the IP addresses that is connecting to GKE cluster
+          - How many requests that are failing with 400
+
+![Log Processing](./assets/img/log-processing-big-data.png)
+Source: **KodeKloud**
+
 
 ## gcloud CLI commands
 

@@ -670,7 +670,6 @@ Two important terms
     - Alerts setup
     - Policies setup
 
-
 ## gcloud CLI commands
 
 gcloud COMMAND_GROUP COMMAND

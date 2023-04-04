@@ -1,5 +1,24 @@
 # Google Cloud Platform
 
+## Google Cloud Shell
+
+- Cloud Shell runs on Linux server
+- It holds up to 5 GB of storage for us
+
+## Google Cloud Design and Structure
+
+### Google Cloud Fiber Network (At the time of writing notes)
+
+- 28 regions
+- 85 zones
+- 146 edge location around the world
+
+### 3 Main Pillar of GCP Design
+
+- Provide Trust and Security
+- Open Cloud - Open Source
+- Analytics and Artificial Intelligence
+
 ## Region & Zones - Section 1
 
 ### Region

@@ -105,8 +105,14 @@ These tools can be run in interactive mode as well as automated scripts.
 - gcloud auth login
   - Authorize our access for gcloud with user's google credentials and sets the current account as default
   - This is similar to Connect-AzAccount in Microsoft Azure
+- gcloud auth list
+  - Ensures that you are authenticated with the right account by running gcloud auth list. The active account will be marked with an asterisk (*)
+- gcloud config set account ACCOUNT
+  - gcloud config set account abc@go.dev
 - gcloud config
   - used to configure accounts and projects
+- gcloud config list
+  - it'll show the properties and active configuration
 - gcloud components
   - install, update, delete sdk components that gives us more flexibility with different resources
   - We can refer "Components" in GCP as "Resource Provider" in Microsoft Azure

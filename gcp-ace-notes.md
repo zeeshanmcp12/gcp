@@ -102,27 +102,58 @@ These tools can be run in interactive mode as well as automated scripts.
 #### Set of commands to initialize, authorize, and setup
 
 - gcloud init
+  - Authorize access and perform the gcloud sdk setup
+  - Used to work with multiple configurations
+  - If we have two GCP accounts, we can execute gcloud init which will prompt to pick configurations or create a new one.
 - gcloud auth login
+  - Authorize the access only
   - Authorize our access for gcloud with user's google credentials and sets the current account as default
   - This is similar to Connect-AzAccount in Microsoft Azure
 - gcloud auth list
+  - List all credentialed account and identify the current active account
   - Ensures that you are authenticated with the right account by running gcloud auth list. The active account will be marked with an asterisk (*)
+- gcloud auth revoke
+  - It will remove credentials and and revoke access tokens from local computer
 - gcloud config set account ACCOUNT
   - gcloud config set account abc@go.dev
 - gcloud config
   - used to configure accounts and projects
 - gcloud config list
   - it'll show the properties and active configuration
+- gcloud config configurations list
+- gcloud config configurations describe <configuration_name>
 - gcloud components
+  - Installable parts of gcloud sdk
   - install, update, delete sdk components that gives us more flexibility with different resources
   - We can refer "Components" in GCP as "Resource Provider" in Microsoft Azure
+- gcloud components list
+- gcloud info
+  - Shows information about user log file, status and some properties
+- gcloud services enable storage.googleapis.com
+  - Enables Cloud Storage API
+- gcloud services enable pubsub.googleapis.com
+  - Enables PUB/SUB API
+
+
 
 #### gcloud command format
 
 gcloud [COMPONENT] [ENTITY] [OPERATION] [POSITIONAL_ARGUMENTS] [FLAGS]
 gcloud   compute   instance   create     demo-instance-1       --zone=us-central1-a
 
+#### gcloud interactive shell
+
+It supports rich feature, for example
+
+- Autocompletion
+- Suggestion
+- Display command information
+
+In order to run gcloud interactive shell
+
+- First we need to install the component using below command
+  - gcloud components install beta
+- Execute below command to start using gcloud interactive shell
+
 ## gcloud commands
 
-- gcloud services enable storage.googleapis.com
-- gcloud services enable pubsub.googleapis.com

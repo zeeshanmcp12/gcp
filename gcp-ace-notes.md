@@ -78,6 +78,44 @@ IAM and firewall rules allow you to set Granular policies to practice the "princ
 - We can open Cloud Shell Editor in browser
 - We can interact with any type of files right from the browser
 
+### Google Cloud SDK
+
+Set of command-line tools that helps us to manage GCP resources through the terminal
+
+- gcloud
+- gsutil
+- bq
+- kubectl
+
+These tools can be run in interactive mode as well as automated scripts.
+
+#### Authorization to GCP
+
+- User account
+  - Single machine
+  - An account for a user
+- Service account
+  - google account
+  - Multiple machines
+  - Can be used programmatically
+
+#### Set of commands to initialize, authorize, and setup
+
+- gcloud init
+- gcloud auth login
+  - Authorize our access for gcloud with user's google credentials and sets the current account as default
+  - This is similar to Connect-AzAccount in Microsoft Azure
+- gcloud config
+  - used to configure accounts and projects
+- gcloud components
+  - install, update, delete sdk components that gives us more flexibility with different resources
+  - We can refer "Components" in GCP as "Resource Provider" in Microsoft Azure
+
+#### gcloud command format
+
+gcloud [COMPONENT] [ENTITY] [OPERATION] [POSITIONAL_ARGUMENTS] [FLAGS]
+gcloud   compute   instance   create     demo-instance-1       --zone=us-central1-a
+
 ## gcloud commands
 
 - gcloud services enable storage.googleapis.com

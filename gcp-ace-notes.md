@@ -146,14 +146,15 @@ gcloud   compute   instance   create     demo-instance-1       --zone=us-central
 It supports rich feature, for example
 
 - Autocompletion
-- Suggestion
-- Display command information
+- Auto-Suggestion
+- Inline help
 
 In order to run gcloud interactive shell
 
 - First we need to install the component using below command
   - gcloud components install beta
 - Execute below command to start using gcloud interactive shell
+  - gcloud beta interactive
 
 ## gcloud commands
 

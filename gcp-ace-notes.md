@@ -99,6 +99,10 @@ These tools can be run in interactive mode as well as automated scripts.
   - Multiple machines
   - Can be used programmatically
 
+#### Labels and Tags
+
+Labels can be used as queryable annotations for resources, but can't be used to set conditions on policies. Tags provide a way to conditionally allow or deny policies based on whether a resource has a specific tag.
+
 #### Set of commands to initialize, authorize, and setup
 
 - gcloud init

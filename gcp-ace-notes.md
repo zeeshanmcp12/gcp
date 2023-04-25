@@ -103,6 +103,11 @@ These tools can be run in interactive mode as well as automated scripts.
 
 Labels can be used as queryable annotations for resources, but can't be used to set conditions on policies. Tags provide a way to conditionally allow or deny policies based on whether a resource has a specific tag.
 
+### Cloud Foundation Fabric
+
+- https://github.com/GoogleCloudPlatform/cloud-foundation-fabric
+- Fabric FAST
+
 #### Set of commands to initialize, authorize, and setup
 
 - gcloud init

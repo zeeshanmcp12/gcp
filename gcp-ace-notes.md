@@ -77,6 +77,10 @@ IAM and firewall rules allow you to set Granular policies to practice the "princ
 
 - We can open Cloud Shell Editor in browser
 - We can interact with any type of files right from the browser
+- It is based on Linux and comes with pre-installed tools like Google cloud SDK, bash, vim etc
+- It comes with 5 gb of persistent disk volume.
+  - df -h -> to check disk usage
+- Cloud shell is globally distributed so Google provisions "Cloud Shell Editor" in the region which is nearest to us.
 
 ### Google Cloud SDK
 

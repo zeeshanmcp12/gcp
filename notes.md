@@ -509,6 +509,22 @@ Source: Kodekloud
   - Cloud Load Balancing (CLB)
   - Cloud CDN
 
+## Internal Networking
+
+- Services or products that we can use to send data around within our system.
+  - VPC
+    - Core of all internal networking in GCP.
+  - Cloud Interconnect
+    - Options for connecting external networks to Google's network
+  - Cloud VPN
+    - IPsec VPN to connect to VPC via public internet for low-volume data connections
+  - Dedicated Interconnect
+    - Direct physical link between VPC and on-prem for high-volume data connections
+  - Cloud Router
+    - Dynamic routing (BGP) for hybrid networks linking GCP VPCs to external networks
+  - CDN Interconnect
+    - Direct, low-latency connectivity to certain CDN providers, with cheaper egress
+  - 
 ## Building APIs in GCP
 
 - Microservice architecture is nothing but, they are independent resources built by different teams communicating with each other.

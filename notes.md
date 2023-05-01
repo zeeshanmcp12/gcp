@@ -311,7 +311,7 @@ Source: Kodekloud
 
 ## Database
 
-### Different kinds of Databases in GCP
+### Different kind of Databases in GCP
 
 - Cloud SQL
   - Works with
@@ -323,11 +323,16 @@ Source: Kodekloud
   - Provides 99.999% uptime
   - Process more than 2 billion request per second at peak
   - Suitable for users using Oracle and DynamoDB
-- Alloy DB for PostgreSQL
-  - Fully managed, POSTGRESQL-compatible database
+- Biq Query
 - Cloud Bigtable
   - Fully managed NoSQL Database
   - Casandra
+- Cloud Datastore
+  - managed and auto-scaled NoSQL Database with indexes, queries, and ACID trans. support
+- Firebase realtime database
+- Cloud Filestore
+- Alloy DB for PostgreSQL
+  - Fully managed, POSTGRESQL-compatible database
 
 #### SQL and NoSQL Database
 
@@ -393,6 +398,22 @@ Source: Kodekloud
   - Alloy DB
 - Un-structured data
   - Google Cloud Storage
+
+#### GCP Storage
+
+- Local SSD
+  - which is attached to any compute engine instance
+  - Block based Storage
+- Persistent Disk
+  - Block based Storage
+  - can be extended up to 64 TB
+- Cloud Filestore
+  - Fully-managed file-based storage
+  - file-based storage and not block-based storage
+  - similar to NAS (Network attached Storage) or EFS (elastic file system in AWS)
+  - Best use case to use Cloud Filestore is when we migrate the data from on-prem data center to cloud (lift and shift)
+- Cloud Storage
+  - Object storage it compares with file storage
 
 #### Google Cloud storage (Object storage in GCP)
 
@@ -478,6 +499,15 @@ Source: Kodekloud
   margin: 1em 0;
 }
 </style>
+
+## External Networking
+
+- Services or products that we can use to manage external presence of our system.
+  - Google Domain
+  - Cloud DNS
+  - Static IP
+  - Cloud Load Balancing (CLB)
+  - Cloud CDN
 
 ## Building APIs in GCP
 

@@ -77,10 +77,30 @@ IAM and firewall rules allow you to set Granular policies to practice the "princ
 
 - We can open Cloud Shell Editor in browser
 - We can interact with any type of files right from the browser
-- It is based on Linux and comes with pre-installed tools like Google cloud SDK, bash, vim etc
 - It comes with 5 gb of persistent disk volume.
-  - df -h -> to check disk usage
-- Cloud shell is globally distributed so Google provisions "Cloud Shell Editor" in the region which is nearest to us.
+  - `df -h` -> to check disk usage
+- Cloud shell is globally distributed so Google provisions "Cloud Shell Editor" in the region which is nearest to us. That's avoiding any unnecessary latency.
+- ```curl metadata/computeMetadata/v1/instance/zone```
+  - to show in which zone our cloud shell instance is provisioned.
+- It is based on Linux and comes with pre-installed tools like Google cloud SDK, bash, vim etc
+  - It is pre-configured with many programming languages like Java, Python, Golang, etc
+- We can customize our environment by executing the script when cloud shell editor boots up.
+  - We need to save the file with this name .customize_environment
+  - By default, this files doesn't exist, hence we need to create it ourself.
+- edit <filename>
+  - to open the file in cloud shell editor
+- gcloud sdk commands
+  - gcloud beta interactive
+    - it will be able to bring up the interactive cloud shell
+- Restart option in cloud shell
+- Preference options for example, color theme, font, text size, etc
+- Usage Quota
+  - Cloud shell has weekly quota limit of 50 hours
+  - If we reach to the limit, we have to wait before we can use Cloud shell again
+- Web Preview
+  - if we have any web page, we can use **Web Preview** to see how it works.
+
+
 
 ### Google Cloud SDK
 

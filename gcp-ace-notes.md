@@ -44,6 +44,63 @@ IAM and firewall rules allow you to set Granular policies to practice the "princ
   - Hardware
 - Encryption at rest
 
+### AAA Model - Control data flow
+
+- Authentication
+  - Who are you?
+    - Password
+    - MFA
+    - Some authentication based things
+- Authorization
+  - What are you allowed to do?
+    - Reading
+    - Writing
+- Accounting
+  - What did you do?
+    - Writing or deleting data but not includes viewing the data
+
+- Resiliency
+  - Make sure to keep things are running
+
+### How Data Flow works?
+
+- test
+  
+### Key Security Products/Features - AuthN - Authentication - Who are you?
+
+- Identity
+  - Humans use Google Workspace/Cloud Identity
+  - Applications and Service use Service Accounts
+- Identity Hierarchy
+  - Google Groups
+- Identity Management
+  - Can use Google Cloud Directory Sync (GCDS) to pull from LDAP
+
+### Key Security Products/Features - AuthZ - Authorization - Who can do what?
+
+- Identity Hierarchy
+  - Google Groups
+- Resource Hierarchy
+  - Organization
+  - Folder
+  - Project
+- IAM
+  - Permission
+  - Roles
+  - Bindings
+- GCS ACLs (Google Cloud Storage Access Control List)
+- Billing Management
+- Networking structure and restrictions
+
+### Key Security Products/Features - Acct - Accounting - What did you do?
+
+- Audit / Activity Logs (Provided by Stackdriver)
+- Billing Export
+  - To BigQuery
+  - To file (in GCS bucket)
+    - JSON or CSV
+- GCS Object Lifecycle Management
+
 ## Google Cloud APIs
 
 - Google Cloud APIs allow to interact with Google cloud service programmatically through the console
@@ -99,8 +156,6 @@ IAM and firewall rules allow you to set Granular policies to practice the "princ
   - If we reach to the limit, we have to wait before we can use Cloud shell again
 - Web Preview
   - if we have any web page, we can use **Web Preview** to see how it works.
-
-
 
 ### Google Cloud SDK
 
@@ -167,8 +222,6 @@ Labels can be used as queryable annotations for resources, but can't be used to 
 - gcloud services enable pubsub.googleapis.com
   - Enables PUB/SUB API
 
-
-
 #### gcloud command format
 
 gcloud [COMPONENT] [ENTITY] [OPERATION] [POSITIONAL_ARGUMENTS] [FLAGS]
@@ -190,4 +243,3 @@ In order to run gcloud interactive shell
   - gcloud beta interactive
 
 ## gcloud commands
-

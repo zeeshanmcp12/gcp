@@ -102,6 +102,21 @@
 }
 </style>
 
+#### Resource Hierarchy
+
+- Domain
+  - This is the primary identity of our organization.
+  - Here we manage users in our organization. So Users, Identities, policies etc
+    - These users or policies are linked to G suite or Cloud Identity accounts.
+- Organization is associated with exactly one domain.
+  - All controlled policies applied to Organization level are inherited by other entities and resources underneath it.
+    - So any folders, projects and resources will get those policies that are applied from the organization layer.
+
+> **Note**: When an organization is created, an organization admin role is created.
+> **Note**: Every Folder should have a parent node. Same goes to project
+
+![gcp-res-hierarchy-exampro](./assets/img/gcp-res-hierarchy-exampro.png "An excellent and straightforward illustration that explains the Resource Hierarchy concept in GCP by exampro")
+
 #### Hierarchy based on application environment
 
 - Following hierarchy is based on application environment.

@@ -14,6 +14,25 @@
 - Open Cloud - Open Source
 - Analytics and Artificial Intelligence
 
+### Cloud Deployment Models
+
+- Public Cloud
+  - Google Cloud
+  - AWS
+  - Azure
+- Private Cloud - On-Prem Cloud
+  - Anthos
+  - Azure Stack
+  - AWS Outposts
+- Hybrid Cloud
+  - GCP with Anthos
+  - Azure with Azure Stack
+  - AWS with AWS Outposts
+- Mutli-Cloud
+  - 2 or more public cloud
+
+> **Note**: When public cloud connects to private cloud, it becomes Hybrid cloud model. Such that, connect GCP to Anthos.
+
 ### GCP Resource Hierarchy
 
 #### Resource Hierarchy

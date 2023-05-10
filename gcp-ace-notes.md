@@ -60,6 +60,11 @@
 > **Note**: If any project is not linked to billing account, it is limited to use paid google cloud services.
 > **Note**: Once Payment profile type has been selected, it cannot be changed afterwards.
 
+##### Cloud Billing - Demo
+
+- Create, Edit, Close, Link, Unlink (to and from a project) and Close billing account
+- Regular user needs **Project Owner** and **Billing Account Administrator** role in order to change the billing account for a project.
+
 ## Understanding Networking and Security in GCP
 
 ### 3-Layer Network that build Google Cloud

@@ -14,6 +14,52 @@
 - Open Cloud - Open Source
 - Analytics and Artificial Intelligence
 
+### GCP Resource Hierarchy
+
+#### Resource Hierarchy
+
+- Domain
+  - This is the primary identity of our organization.
+  - Here we manage users in our organization. So Users, Identities, policies etc
+    - These users or policies are linked to G suite or Cloud Identity accounts.
+- Organization is associated with exactly one domain.
+  - All controlled policies applied to Organization level are inherited by other entities and resources underneath it.
+    - So any folders, projects and resources will get those policies that are applied from the organization layer.
+- Organization to Project is considered as **Account-level** resource in GCP.
+- Resources are considered as **Service-level** resource in GCP.
+
+> **Note**: When an organization is created, an organization admin role is created.
+> **Note**: Every Folder should have a parent node. Same goes to project
+
+![gcp-res-hierarchy-exampro](./assets/img/gcp-res-hierarchy-exampro.png "An excellent and straightforward illustration that explains the Resource Hierarchy concept in GCP by exampro")
+
+#### Cloud Billing
+
+- Billing Account in GCP
+  - Billing account is a cloud-level resource managed in the cloud console.
+  - A billing account can be linked to one or more projects and pays for the resources created in GCP project.
+  - A billing account is linked to Payment profile (Payment method etc) which is a Google-level resource.
+  - Billing accounts can pay for other organizations too.
+  - roles and permission can be granted to a billing account via IAM.
+  - We can also have sub-accounts under master billing account.
+  - Sub-accounts can be used for resellers.
+  - Sub-accounts can group resources' charges in separate invoice and send back to master billing account for payment.
+  - Sub-accounts are designed to allow for customer separation and management.
+- Payment Profile
+  - Payment profile is not only limited to Google Cloud but to other services as well. For example Google Ads etc.
+  - It stores all information such that Name, Email address, and Contact.
+  - It stores all payment method.
+  - It controls who can view and receives invoices.
+  - Payment Profile has two different types:
+    - Individual
+      - If we selected this profile for personal usage
+      - We can control this profile and cannot add other users into it
+    - Business
+      - We can add other users to manage and control our payments.
+
+> **Note**: If any project is not linked to billing account, it is limited to use paid google cloud services.
+> **Note**: Once Payment profile type has been selected, it cannot be changed afterwards.
+
 ## Understanding Networking and Security in GCP
 
 ### 3-Layer Network that build Google Cloud

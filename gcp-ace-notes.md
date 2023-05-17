@@ -84,6 +84,15 @@
 - Create, Edit, Close, Link, Unlink (to and from a project) and Close billing account
 - Regular user needs **Project Owner** and **Billing Account Administrator** role in order to change the billing account for a project.
 
+### Launch Stages
+
+- alpha
+  - in testing
+- beta
+  - tested and waiting approval
+- ga
+  - generally available
+
 ## Understanding Networking and Security in GCP
 
 ### 3-Layer Network that build Google Cloud

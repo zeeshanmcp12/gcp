@@ -93,6 +93,87 @@
 - ga
   - generally available
 
+### Policy Architecture / Inheritance
+
+- Resources inherit policies from Projects
+- Projects inherit policies from Folders
+- Folders inherit policies from Organization
+- Organization policies also applies at the resource level
+
+#### Policy Statement
+
+- Set of statements that describes who has what access
+- It includes
+  - Members
+    - User
+    - Group
+    - Service Account
+    - G Suite
+  - Roles
+    - compute.instances.list
+  - Condition
+  - Metadata
+    - etag
+    - version
+  - Audit Config
+- Command to find out the policy on Project level
+
+```
+gcloud projects get-iam-policy <project_id>
+gcloud resource-manager folders get-iam-policy <folder_id>
+gcloud organizations get-iam-policy <organization_id>
+```
+
+> **Note**: Policy statements can be written in both YAML and JSON format.
+
+#### Version in policy
+
+- Usually version 1 doesn't contain any condition.
+  - If our request doesn't specify any version, IAM will assume that it is version 1 and always return version 1 policy.
+- Version 2 is used for internal use of google. By Querying, we wont be able to see version 2
+- Version 3 contains information about condition.
+
+#### Conditions
+
+- Conditional role bindings
+  - This is another name of policy that holds a condition within binding.
+  - We can control access to Google cloud resources by adding conditional role bindings to new and existing policy.
+  - By using the date time attribute, We can enforce time-based controls when accessing the given resource.
+  - Example:
+    - condition:
+      - title: expirable access
+      - description: Do not grant access after June 1st
+      - expression: request.time < timestamp('2023-06-01T00:00:00.000Z')
+- Example for Time based condition
+
+![time-based-conditions](./assets/img/time-based-conditions.png "Time based conditions in GCP by exampro")
+
+#### Condition Limitations
+
+- Limited to specific services
+- Primitive roles are unsupported
+- Members cannot be AllUsers or allAuthenticated Users
+- Limit of 100 conditional role bindings per policy
+- 20 role bindings for same role and same member
+
+#### AuditConfig Logs policy
+
+- This specifies the audit configuration for a service.
+- This configuration determines which permission type is logged.
+- This configuration also determines what identity (if any) is exempted from logging.
+- When we specify auditConfigs, they must have one or more auditConfigs.
+- Following policy enables DATA_READ, ADMIN_READ and DATA_WRITE logging on all services while exempting abc@gmail.com from ADMIN_READ logging on cloud storage.
+- auditLogConfigs:
+  - logType: DATA_READ
+  - logType: ADMIN_READ
+  - logType: DATA_WRITE
+  service: allServices
+- auditLogConfigs:
+  - exemptedMembers:
+    - abc@gmail.com
+    logType: ADMIN_READ
+  service: storage.googleapis.com
+
 ## Understanding Networking and Security in GCP
 
 ### 3-Layer Network that build Google Cloud

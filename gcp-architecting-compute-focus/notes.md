@@ -35,9 +35,24 @@
   - Massively parallel - Relational database
   - Multi-servers
   - Multi-regional environment
+- Google Cloud, VPC networks are global
+- Control access to APIs using Cloud Endpoints
+  - Protect and monitor your public APIs
+  - Control who has access to your API
+  - ...
+- Cloud Armor
+  - Similar to Azure Firewall in Azure
+- Bigtable is not design to less than 1 TB of data.
+- Google Cloud Pricing calculator
+  - The only issue is that, it asks for some question which we even would not know at that time.
+- Google Data Studio is old name. New name is Looker studio
+- Key Management Service
+
+## Data Loss Prevention API
+
+- cloud.google.com/dlp/demo/#!/
 
 >Note: Google cloud storage and database portfolio
->Note: 
 
 - User Personas
   - Personas is really a person.
